@@ -9,6 +9,8 @@ const app = new Application({
     height: window.innerHeight,
     autoDensity: true,
     resizeTo: window,
+    backgroundColor: 0xf2eecb,
+    preserveDrawingBuffer: true
 });
 
 document.body.appendChild(app.view);
@@ -26,7 +28,6 @@ viewport
     .pinch()
     .wheel()
     .decelerate()
-
 
 app.stage.addChild(viewport);
 
